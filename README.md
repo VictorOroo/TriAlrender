@@ -31,7 +31,7 @@ must have a unique name
 ## Routes
 Set up the following routes. Make sure to return JSON data in the format specified along with the appropriate HTTP verb.
 
-GET /restaurantsLinks to an external site.
+# GET /restaurantsLinks to an external site.
 Return JSON data in the format below:
 
 [
@@ -46,7 +46,7 @@ Return JSON data in the format below:
     "address": "Westgate Mall, Mwanzi Road, Nrb 100"
   }
 ]
-GET /restaurants/:idLinks to an external site.
+# GET /restaurants/:idLinks to an external site.
 If the Restaurant exists, return JSON data in the format below:
 
 {
@@ -71,7 +71,7 @@ If the Restaurant does not exist, return the following JSON data, along with the
 {
   "error": "Restaurant not found"
 }
-DELETE /restaurants/:id
+# DELETE /restaurants/:id
 If the Restaurant exists, it should be removed from the database, along with any RestaurantPizzas that are associated with it (a RestaurantPizza belongs to a Restaurant, so you need to delete the RestaurantPizzas before the Restaurant can be deleted).
 
 After deleting the Restaurant, return an empty response body, along with the appropriate HTTP status code.
@@ -96,7 +96,7 @@ Return JSON data in the format below:
     "ingredients": "Dough, Tomato Sauce, Cheese, Pepperoni"
   }
 ]
-POST /restaurant_pizzas
+# POST /restaurant_pizzas
 This route should create a new RestaurantPizza that is associated with an existing Pizza and Restaurant. It should accept an object with the following properties in the body of the request:
 
 {
